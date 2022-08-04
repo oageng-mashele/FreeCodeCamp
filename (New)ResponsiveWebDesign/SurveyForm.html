@@ -15,64 +15,75 @@
 
         <form id="survey-form">
 
-            <label id="name-label">Enter your name:
-                <input required type="text" name="name" id="name" placeholder="your name">
-            </label>
-            <label id="email-label">Enter your email:
-                <input required type="email" name="email" id="email" placeholder="your email">
-            </label>
-            <label id="number-label">Enter your numbers:
-                <input type="number" name="number" id="number" min="0" max="9" placeholder="your number">
-            </label>
+            <fieldset class="user">
 
-            <label>How did you hear about us?
+                <label id="name-label">Enter your name:
+                    <input required type="text" name="name" id="name" placeholder="your name">
+                </label>
+                <label id="email-label">Enter your email:
+                    <input required type="email" name="email" id="email" placeholder="your email">
+                </label>
+                <label id="number-label">Enter your age(optional):
+                    <input type="number" name="age" id="number" min="16" max="40" placeholder="your age">
+                </label>
+
+            </fieldset>
+
+            <label>How do you know me?
                 <select id="dropdown">
                     <option value="">(select one)</option>
-                    <option value="1">freeCodeCamp News</option>
-                    <option value="2">freeCodeCamp YouTube Channel</option>
-                    <option value="3">freeCodeCamp Forum</option>
-                    <option value="4">Other</option>
+                    <option value="school">School</option>
+                    <option value="social media">Social Media</option>
+                    <option value="real life">Real life</option>
+                    <option value="other">Other</option>
                 </select>
             </label>
 
-            <label>
-                <input type="radio" name="account-type" value="radio"> Personal Account
-            </label>
-            <label>
-                <input type="radio" name="account-type" value="rad"> Business Account
-            </label>
+            <fieldset id="typeoffriend">
+                <p>What type of friend you want?</p>
+                <label>
+                    <input type="radio" name="type" value="Introvet"> Introvet
+                </label>
+                <label>
+                    <input type="radio" name="type" value="Extrovet"> Extrovet
+                </label>
+            </fieldset>
+            
 
-    
-                <label>
-                    <input required value="1" type="checkbox" name="t&c"/> I accept the
+            <fieldset id=" charectors">
+                <p>Charectors you need in a friend</p>
+                 <label>
+                    <input required value="funny" type="checkbox" name="t&c"/> Funny
                 </label>
                 <label>
-                    <input required value="2" type="checkbox" name="t&c"/> I accept the
+                    <input required value="listener" type="checkbox" name="t&c"/> listener
                 </label>
                 <label>
-                    <input required value="3" type="checkbox" name="t&c"/> I accept the
+                    <input required value="motivator" type="checkbox" name="t&c"/> motivator
                 </label>
                 <label>
-                    <input required value="4" type="checkbox" name="t&c"/> I accept the
+                    <input required value="hype man" type="checkbox" name="t&c"/> hype man
                 </label>
                 <label>
-                    <input required value="5" type="checkbox" name="t&c"/> I accept the
+                    <input required value="dilegent" type="checkbox" name="t&c"/> dilegent
                 </label>
                 <label>
-                    <input required value="6" type="checkbox" name="t&c"/> I accept the
+                    <input required value="plug" type="checkbox" name="t&c"/> plug
                 </label>
                 <label>
-                    <input required value="7" type="checkbox" name="t&c"/> I accept the
+                    <input required value="sweet" type="checkbox" name="t&c"/> sweet
                 </label>
                 <label>
-                    <input required value="8" type="checkbox" name="t&c"/> I accept the
+                    <input required value="other" type="checkbox" name="t&c"/> other
                 </label>
+            </fieldset>
+               
             
 
             <label>additional comments: 
                 <textarea name="bio" placeholder="add your comments here" rows="3" cols="30"></textarea>
             </label>
-            <label>submit<input type="submit" name="submit" id="submit"></label>
+            <input type="submit" name="submit" id="submit">
             
         </form>
     </body>
