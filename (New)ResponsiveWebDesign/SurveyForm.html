@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="SurveyFormStyles.css">
+    </head>
+
+    <body>
+        <h1 id="title">Oageng's Survey</h1>
+        <p id="description">This will give Oageng feedback on what he needs to improve on</p>
+
+        <form id="survey-form">
+
+            <label id="name-label">Enter your name:
+                <input required type="text" name="name" id="name" placeholder="your name">
+            </label>
+            <label id="email-label">Enter your email:
+                <input required type="email" name="email" id="email" placeholder="your email">
+            </label>
+            <label id="number-label">Enter your numbers:
+                <input type="number" name="number" id="number" min="0" max="9" placeholder="your number">
+            </label>
+
+            <label>How did you hear about us?
+                <select id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">freeCodeCamp News</option>
+                    <option value="2">freeCodeCamp YouTube Channel</option>
+                    <option value="3">freeCodeCamp Forum</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+
+            <label>
+                <input type="radio" name="account-type" value="radio"> Personal Account
+            </label>
+            <label>
+                <input type="radio" name="account-type" value="rad"> Business Account
+            </label>
+
+    
+                <label>
+                    <input required value="1" type="checkbox" name="t&c"/> I accept the
+                </label>
+                <label>
+                    <input required value="2" type="checkbox" name="t&c"/> I accept the
+                </label>
+                <label>
+                    <input required value="3" type="checkbox" name="t&c"/> I accept the
+                </label>
+                <label>
+                    <input required value="4" type="checkbox" name="t&c"/> I accept the
+                </label>
+                <label>
+                    <input required value="5" type="checkbox" name="t&c"/> I accept the
+                </label>
+                <label>
+                    <input required value="6" type="checkbox" name="t&c"/> I accept the
+                </label>
+                <label>
+                    <input required value="7" type="checkbox" name="t&c"/> I accept the
+                </label>
+                <label>
+                    <input required value="8" type="checkbox" name="t&c"/> I accept the
+                </label>
+            
+
+            <label>additional comments: 
+                <textarea name="bio" placeholder="add your comments here" rows="3" cols="30"></textarea>
+            </label>
+            <label>submit<input type="submit" name="submit" id="submit"></label>
+            
+        </form>
+    </body>
+</html>
