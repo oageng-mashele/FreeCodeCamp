@@ -40,14 +40,67 @@
                         <input type="date" name="birth-date" id="birth-date">
                     </div>
                 </section>
+
                 <section role="region" aria-labelledby="html-questions">
                     <h2 id="html-questions">HTML</h2>
+                    <div class="question-block">
+                        <p>1</p>
+                        <fieldset class="question" name="html-question-one">
+                            <legend>The legend element represents a caption for the content of its parent fieldset elemen</legend>
+                            <ul class="answer-list">
+                                <li>
+                                    <label for="true">
+                                        <input type="radio" id="true" value="True" name="q1">True
+                                    </label>
+                                </li>
+                                <li><label for="false">
+                                    <input type="radio" id="false" value="False" name="q1">False
+                                </label></li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                    <div class="question-block">
+                        <p>2</p>
+                        <fieldset class="question" name="html-question-two">
+                            <legend>A label element nesting an input element is required to have a for attribute with the same value as the input's id</legend>
+                            <ul class="answer-list">
+                                <li>
+                                    <label for="true">
+                                        <input type="radio" id="true" value="True" name="q2">True
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="false">
+                                        <input type="radio" id="false" value="False" name="q2">False
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
                 </section>
+
                 <section role="region" aria-labelledby="css-questions">
                     <h2 id="css-questions">CSS</h2>
+                    <div class="formrow">
+                        <div class="question-block">
+                            <label for="customer">Are you a frontend developer?</label>
+                        </div>
+                        <div class="answer">
+                            <select required name="customer" id="customer">
+                                <option value="">Select an option</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                        <div class="question-block">
+                            <label for="ask-css">Do you have any questions:</label>
+                        </div>
+                        <div class="answer">
+                            <textarea name="ask-css" id="ask-css" placeholder="Who is flexbox..." cols="24" rows="5"></textarea>
+                        </div>
+                    </div>
                 </section>
-                <a href=""></a>
-                <input type="submit" name="submit" id="submit">
+                <input type="submit" value="Submit">
             </form>
         </main>
     </body>
