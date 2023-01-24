@@ -214,3 +214,42 @@ body {
     position: absolute;
     left: 100px;
 }
+
+.fa-bars {
+    display: block;
+    margin-top: 30%;
+    margin-left: 40%;
+}
+
+#guitar-neck {
+    width: 200px;
+    height: 30px;
+    background-color: #d2691e;
+    position: absolute;
+    top: 45px;
+    left: 200px;
+    z-index: 3;
+}
+
+.eyes {
+    width: 35px;
+    height: 20px;
+    background-color: #8B4513;
+    border-radius: 20px 50%;
+}
+
+.right {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+}
+
+.left {
+    position: absolute;
+    top: 15px;
+    left: 30px;
+}
+
+.fas {
+    font-size: 30px;
+}
