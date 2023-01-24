@@ -106,3 +106,13 @@ body {
     top: -10px;
     left: 70px;
 }
+
+#white-paper {
+    width: 400px;
+    height: 100px;
+    background-color: ghostwhite;
+    position: absolute;
+    top: 250px;
+    left: -150px;
+    z-index: 1;
+}
