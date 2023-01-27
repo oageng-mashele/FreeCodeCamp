@@ -78,3 +78,15 @@ body {
     top: -75px;
     right: -75px;
 }
+
+.penguin-body::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 45%;
+    background-color: gray;
+    top: 10%;
+    left: 25%;
+    border-radius: 0% 0% 100% 100%;
+    opacity: 70%;
+}
