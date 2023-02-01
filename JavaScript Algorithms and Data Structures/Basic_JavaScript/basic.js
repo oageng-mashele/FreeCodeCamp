@@ -75,3 +75,42 @@ const prod = 2.5 * 2.0;
 
 //step19
 const quot = 4.4 / 2.0;
+
+//step20
+const remainder = 11 % 3;
+
+//step21
+a += 12;
+b += 9;
+c += 7;
+
+//step22
+a -= 6;
+b -= 15;
+c -= 1;
+
+//step23
+a *= 5;
+b *= 3;
+c *= 10;
+
+//step24
+a /= 12;
+b /= 4;
+c /= 11;
+
+//step25
+const myString = "I am a \"double quoted\" string inside \"double quotes\".";
+
+//step26
+const myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+
+//step27
+const mySt = "FirstLine\n\t\\SecondLine\nThirdLine"
+
+//step28
+const myS = "This is the start. " + "This is the end."
+
+//step29
+let mySting = "This is the first sentence.";
+mySting += " This is the second sentence."
