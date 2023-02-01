@@ -195,4 +195,79 @@ myArray1.unshift(["Paul", 35])
 //step48
 const myList = [["Oats", 2], ["Tomato",6], ["rice",1], ["sugar",2], ["fish", 3]];
 
+//step49
+function reusableFunction() {
+    console.log("Hi World");
+}
+reusableFunction();
 
+//step50
+function functionWithArgs(a,b) {
+    console.log(a+b);
+}
+functionWithArgs(5,2)
+
+//step51
+function timesFive(num) {
+    return num * 5
+}
+
+//step52
+let myGlobal = 10;
+function fun1() {
+    oopsGlobal = 5;
+}
+function fun2() {
+    let output = "";
+    if (typeof myGlobal != "undefined") {
+      output += "myGlobal: " + myGlobal;
+    }
+    if (typeof oopsGlobal != "undefined") {
+      output += " oopsGlobal: " + oopsGlobal;
+    }
+    console.log(output);
+}
+
+//step53
+function myLocalScope() {
+    let myVar = 54;
+    console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+console.log('outside myLocalScope', myVar);
+
+//step54
+const outerWear = "T-Shirt";
+function myOutfit() {
+    const outerWear = "sweater";
+    return outerWear;
+}
+myOutfit();
+
+//step55
+function addFive() {
+    sum += 5;
+}
+
+//step56
+let processed = 0;
+function processArg(num) {
+  return (num + 3) / 5;
+}
+processed = processArg(7);
+
+//step57
+function nextInLine(arr, item) {
+    arr.push(item);
+    let a = arr.shift();
+    return a;
+}
+let testArr = [1, 2, 3, 4, 5];
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+
+//step58
+function welcomeToBooleans() {
+    return true;
+}
