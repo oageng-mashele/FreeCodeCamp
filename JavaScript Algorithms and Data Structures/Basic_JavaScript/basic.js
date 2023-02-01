@@ -398,3 +398,133 @@ function testLogicalOr(val) {
     return "Inside";
 }
 testLogicalOr(15);
+
+//step71
+function testElse(val) {
+    let result = "";
+    if (val > 5) {
+        result = "Bigger than 5";
+    }
+  
+    else {
+        result = "5 or Smaller";
+    }
+    return result;
+}
+testElse(4);
+
+//step72
+function testElseIf(val) {
+    if(val >= 5 && val <= 10)
+  return "Between 5 and 10";
+    else if (val > 10) {
+      return "Greater than 10";
+    }
+    else {
+      return "Smaller than 5";
+    }
+}
+testElseIf(7);
+
+//step73
+function orderMyLogic(val) {
+    if (val >= 10) {
+        return "Greater than or equal to 10";
+    } 
+    else if (val < 5) {
+        return "Less than 5";
+    } 
+    else {
+        return "Less than 10";
+    }
+}
+orderMyLogic(7);
+
+//step74
+function testSize(num) {
+    if (num < 5) {
+        return "Tiny"
+    }
+    else if (num < 10) {
+        return "Small"
+    }
+    else if (num < 15) {
+        return "Medium"
+    }
+    else if (num <20) {
+        return "Large"
+    }
+    else {
+        return "Huge";
+    }
+}
+testSize(7);
+
+//step75 
+const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+    if(strokes === 1){
+        return names[0];
+    }
+    else if(strokes <= par - 2) {
+        return names[1];
+    }
+    else if(strokes <= par - 1) {
+        return names[2];
+    }
+    else if( strokes == par) {
+        return names[3];
+    }
+    else if( strokes <= par + 1) {
+        return names[4];
+    }
+    else if( strokes <= par + 2) {
+        return names[5];
+    }
+    else {
+        return names[6];
+    }
+}
+golfScore(5, 4);
+
+//step76
+function caseInSwitch(val) {
+    let answer = "";
+    switch (val) {
+        case 1:
+            answer = "alpha";
+            break;
+        case 2:
+            answer = "beta";
+            break;
+        case 3:
+            answer = "gamma";
+            break;
+        case 4:
+            answer = "delta";
+    }
+    return answer;
+  }
+caseInSwitch(1);
+
+//step77
+function switchOfStuff(val) {
+    let answer = "";
+    // Only change code below this line
+   switch (val) {
+        case "a":
+            answer = "apple";
+            break;
+        case "b":
+            answer = "bird";
+            break;
+        case "c":
+            answer = "cat";
+            break;
+        default:
+            answer = "stuff";
+    }
+    return answer;
+}
+switchOfStuff(1);
