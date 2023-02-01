@@ -114,3 +114,48 @@ const myS = "This is the start. " + "This is the end."
 //step29
 let mySting = "This is the first sentence.";
 mySting += " This is the second sentence."
+
+//step30
+const myName = "Oageng";
+const myStrd = "My name is " + myName + " and I am well.";
+
+//step31
+const someAdjective = "fun!";
+let myStrh = "Learning to code is ";
+myStrh += someAdjective;
+
+//step32
+let lastNameLength = 0;
+const lastName = "Lovelace"
+lastNameLength = lastName.length
+
+//step33
+let firstLetterOfLastName = "";
+const lastNamee = "Lovelace";
+firstLetterOfLastName = lastNamee[0];
+
+//step34
+let myStrr = "Jello World";
+myStrr = "Hello World;"
+
+//step35
+const thirdLetterOfLastName = lastName[2];
+
+//step36
+const lastLetterOfLastName = lastName[lastName.length - 1];
+
+//step37
+const secondToLastLetterOfLastName = lastName[lastName.length - 2];
+
+//step38: word blanks
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+const wordBlanks = "My " + myNoun + " which is " + myAdjective + " just " + myVerb + " and it was " + myAdverb; 
+
+//step39: arrays
+const myArray = ["Oageng", 21];
+
+
+
