@@ -157,5 +157,42 @@ const wordBlanks = "My " + myNoun + " which is " + myAdjective + " just " + myVe
 //step39: arrays
 const myArray = ["Oageng", 21];
 
+//step40
+const myArray2 = [["Oageng", 21], ["Mashele", 07]];
+
+//step41
+const myArray3 = [50, 60, 70];
+let myData = myArray3[0];
+
+//step42
+myArray3[0] = [45];
+
+//step43
+const myArray4 = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [[10, 11, 12], 13, 14],
+  ];
+  
+const myData1 = myArray4[2][1];
+
+//step44
+const myArray1 = [["John", 23], ["cat", 2]];
+myArray1.push(["dog", 3])
+
+//step45
+const myArray5 = [["John", 23], ["cat", 2]];
+let removedFromMyArray = myArray5.pop();
+
+//step46
+const myArray6 = [["John", 23], ["dog", 3]];
+removedFromMyArray = myArray6.shift();
+
+//step47
+myArray1.unshift(["Paul", 35])
+
+//step48
+const myList = [["Oats", 2], ["Tomato",6], ["rice",1], ["sugar",2], ["fish", 3]];
 
 
