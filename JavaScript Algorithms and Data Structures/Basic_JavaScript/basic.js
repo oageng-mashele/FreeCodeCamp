@@ -616,3 +616,173 @@ function cc(card) {
     return count + " " + holdBet;
 }
 cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+//step83: JavaScript Objects
+const myDog = {
+    name: "doggo",
+    legs: 4,
+    tails: 1,
+    friends: ["bobby", "mya", "love"]
+};
+
+//step84
+const testObj = {
+    "hat": "ballcap",
+    "shirt": "jersey",
+    "shoes": "cleats"
+};
+const hatValue = testObj.hat;
+const shirtValue = testObj.shirt;
+
+//step85
+const testObj1 = {
+    "an entree": "hamburger",
+    "my side": "veggies",
+    "the drink": "water"
+};
+const entreeValue = testObj1["an entree"];
+const drinkValue = testObj1["the drink"];
+
+//step86
+const testObj2 = {
+    12: "Namath",
+    16: "Montana",
+    19: "Unitas"
+};
+const playerNumber = 16;
+const player = testObj2[playerNumber];
+
+//step87
+const myDog1 = {
+    "name": "Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+}
+myDog1.name = "Happy Coder";
+
+//step88
+myDog1.bark = "woof";
+
+//step89
+delete myDog1.tails;
+
+//step90
+function phoneticLookup(val) {
+    let result = "";
+  
+    const lookUp = {
+        "alpha": "Adams",
+        "bravo": "Boston",
+        "charlie": "Chicago",
+        "delta": "Denver",
+        "echo": "Easy",
+        "foxtrot": "Frank",
+    }
+    result = lookUp[val];
+    
+    return result;
+}
+phoneticLookup("charlie");
+
+//step91
+function checkObj(obj, checkProp) {
+    if (obj.hasOwnProperty(checkProp)) {
+        return obj[checkProp];
+    }
+    return "Not Found"
+}
+
+//step92
+const myMusic = [
+    {
+      "artist": "Billy Joel",
+      "title": "Piano Man",
+      "release_year": 1973,
+      "formats": [
+        "CD",
+        "8T",
+        "LP"
+      ],
+      "gold": true
+    },
+    {
+        "artist": "BLACKPINK",
+        "title": "BORN PINK",
+        "release_year": 2022,
+        "formats": [
+            "CD",
+            "LP",
+            "Digital"
+        ]
+    }
+];
+
+//step93
+const myStorage = {
+    "car": {
+      "inside": {
+        "glove box": "maps",
+        "passenger seat": "crumbs"
+       },
+      "outside": {
+        "trunk": "jack"
+      }
+    }
+};
+const gloveBoxContents = myStorage.car.inside["glove box"];
+
+//step94
+const myPlants = [
+    {
+      type: "flowers",
+      list: [
+        "rose",
+        "tulip",
+        "dandelion"
+      ]
+    },
+    {
+      type: "trees",
+      list: [
+        "fir",
+        "pine",
+        "birch"
+      ]
+    }
+];
+const secondTree = myPlants[1].list[1];
+
+//step95
+const recordCollection = {
+    2548: {
+      albumTitle: 'Slippery When Wet',
+      artist: 'Bon Jovi',
+      tracks: ['Let It Rock', 'You Give Love a Bad Name']
+    },
+    2468: {
+      albumTitle: '1999',
+      artist: 'Prince',
+      tracks: ['1999', 'Little Red Corvette']
+    },
+    1245: {
+      artist: 'Robert Palmer',
+      tracks: []
+    },
+    5439: {
+      albumTitle: 'ABBA Gold'
+    }
+};
+function updateRecords(records, id, prop, value) {
+    const album = records[id];
+    if (value === "") {
+      delete album[prop];
+    } else if (prop !== "tracks") {
+      album[prop] = value;
+    } else {
+      album["tracks"] = album["tracks"] || [];
+      album["tracks"].push(value);
+    }
+    return records;
+}
+updateRecords(recordCollection, 5439, 'artist', 'ABBA');
