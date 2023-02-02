@@ -786,3 +786,56 @@ function updateRecords(records, id, prop, value) {
     return records;
 }
 updateRecords(recordCollection, 5439, 'artist', 'ABBA');
+
+//step96: loops
+const myArray7 = [];
+let n = 5;
+while (n >= 0) {
+    myArray7.push(n);
+    n--;
+}
+
+//step97
+const myArray8 = [];
+for (let i = 1; i <= 5; i++) {
+    ourArray8.push(i);
+}
+
+//step98
+const myArray9 = [];
+for (let i = 1; i <= 9; i += 2) {
+    myArray9.push(i);
+}
+
+//step99
+const myArray10 = [];
+for (let i = 9; i >= 1; i -= 2) {
+    myArray10.push(i);
+}
+
+//step100
+const myArr = [2, 3, 4, 5, 6];
+let total = 0;
+for (let i = 0; i < myArr.length; i++) {
+    total+= myArr[i];
+}
+
+//step101
+function multiplyAll(arr) {
+    let product = 1;
+    for (let i = 0; i < arr.length; i++) {
+        for( let j = 0; j < arr[i].length; j++) {
+            product *= arr[i][j]
+        }
+    }
+    return product;
+}
+multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
+
+//step102
+const myArray11 = [];
+let i = 10;
+do {
+    myArray11.push(i);
+    i++;
+} while (i < 5);
