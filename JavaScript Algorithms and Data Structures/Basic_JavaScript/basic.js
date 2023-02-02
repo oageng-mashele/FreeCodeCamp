@@ -839,3 +839,109 @@ do {
     myArray11.push(i);
     i++;
 } while (i < 5);
+
+//step103: Recursion
+function sum(arr, n) {
+    if (n <= 0) {
+        return 0;
+    }
+    return sum(arr, n - 1 ) + arr[n - 1]; 
+}
+
+//step104
+const contacts = [
+    {
+      firstName: "Akira",
+      lastName: "Laine",
+      number: "0543236543",
+      likes: ["Pizza", "Coding", "Brownie Points"],
+    },
+    {
+      firstName: "Harry",
+      lastName: "Potter",
+      number: "0994372684",
+      likes: ["Hogwarts", "Magic", "Hagrid"],
+    },
+    {
+      firstName: "Sherlock",
+      lastName: "Holmes",
+      number: "0487345643",
+      likes: ["Intriguing Cases", "Violin"],
+    },
+    {
+      firstName: "Kristian",
+      lastName: "Vos",
+      number: "unknown",
+      likes: ["JavaScript", "Gaming", "Foxes"],
+    },
+];
+function lookUpProfile(name, prop) {
+    for (let i = 0; i < contacts.length; i++) {
+        if( contacts[i].firstName === name) {
+            return contacts[i][prop] || "No such property";
+        }
+    }
+    return "No such contact"
+}
+lookUpProfile("Akira", "likes");
+
+//step105
+function randomFraction() {
+    return Math.random();
+}
+
+//step106
+function randomWholeNum() {
+    return Math.floor(Math.random() * 10);
+}
+
+//step107
+function randomRange(myMin, myMax) {
+    return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+}
+
+//step108
+function convertToInteger(str) {
+    return parseInt(str);
+}
+convertToInteger("56")
+
+//step109
+function convertToInteger(str) {
+    return parseInt(str, 2);
+}
+convertToInteger("10011")
+
+//step110
+function checkEqual(a, b) {
+    return a === b ? "Equal" : "Not Equal";
+}
+checkEqual(1, 2)
+
+//step111
+function checkSign(num) {
+    return (num >= 1) ? "positive" : (num < 0) ? "negative" : "zero";
+}
+checkSign(10);
+
+//step112
+function countdown(n){
+    if (n <= 0) {
+        return [];
+    }
+    let ary = countdown(n - 1);
+    ary.unshift(n);
+    return ary;
+}
+
+//step113
+function rangeOfNumbers(startNum, endNum) {
+    if (endNum < startNum) {
+        return [];
+      } 
+    else {
+        const numbers = rangeOfNumbers(startNum, endNum - 1);
+        numbers.push(endNum);
+        return numbers;
+    }
+};
