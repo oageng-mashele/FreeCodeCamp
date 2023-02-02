@@ -511,7 +511,6 @@ caseInSwitch(1);
 //step77
 function switchOfStuff(val) {
     let answer = "";
-    // Only change code below this line
    switch (val) {
         case "a":
             answer = "apple";
@@ -528,3 +527,92 @@ function switchOfStuff(val) {
     return answer;
 }
 switchOfStuff(1);
+
+//step78
+function sequentialSizes(val) {
+    let answer = "";
+    switch (val) {
+        case 1:
+        case 2:
+        case 3:
+            answer = "Low";
+            break;
+        case 4:
+        case 5:
+        case 6:
+            answer = "Mid";
+            break;
+        case 7:
+        case 8:
+        case 9:
+            answer = "High";
+    }
+    return answer;
+}
+sequentialSizes(1);
+
+//step79
+function chainToSwitch(val) {
+    let answer = "";
+    switch(val) {
+        case "bob":
+            answer = "Marley";
+            break;
+        case 42: 
+            answer = "The Answer";
+            break;
+        case 1:
+            answer = "There is no #1";
+            break;
+        case 99:
+            answer = "Missed me by this much!";
+            break;
+        case 7: 
+            answer = "Ate Nine";
+
+    }
+    return answer;
+}
+chainToSwitch(7);
+
+//step80
+function isLess(a, b) {
+    return a < b;
+}
+isLess(10, 15);
+
+//step81
+function abTest(a, b) {
+    if(a < 0 || b < 0) {
+        return undefined;
+    }
+    return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+abTest(2,2);
+
+//step82
+let count = 0;
+function cc(card) {
+    switch(card) {
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+            count++;
+            break;
+        case 10:
+        case 'J':
+        case 'Q':
+        case 'K':
+        case 'A':
+            count--;
+            break;
+    }
+    var holdBet = 'Hold';
+    if (count > 0) {
+        holdBet = "Bet"
+    }
+    return count + " " + holdBet;
+}
+cc(2); cc(3); cc(7); cc('K'); cc('A');
