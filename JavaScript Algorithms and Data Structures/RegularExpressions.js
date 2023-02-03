@@ -103,5 +103,61 @@ let result19 = movieName.match(noNumRegex).length;
 
 //step22: Restrict Possible Usernames
 let username = "JackOfAllTrades";
-let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i; // Change this line
+let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i;
 let result20 = userCheck.test(username)
+
+//step23: Whitespace
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /s/g; 
+let result21 = sample.match(countWhiteSpace);
+
+//step24: Non-Whitespace characters
+let sample2 = "Whitespace is important in separating words";
+let countNonWhiteSpace = /\S/g; 
+let result22 = sample.match(countWhiteSpace);
+
+//step25: Specify Upper and Lower Number
+let ohStr = "Ohhh no";
+let ohRegex = /Oh{3,6}\sno/;
+let result23 = ohRegex.test(ohStr);
+
+//step26: Specify Only the Lower Number
+let haStr = "Hazzzzah";
+let haRegex = /Haz{4,}ah/; 
+let result24 = haRegex.test(haStr);
+
+//step27: Specify Exact Number
+let timStr = "Timmmmber";
+let timRegex = /Tim{4}ber/;
+let result25 = timRegex.test(timStr);
+
+//step28: All or None
+let favWord = "favorite";
+let favRegex = /favou?rite/i;
+let result26 = favRegex.test(favWord);
+
+//step29: Positive and Negative Lookahead
+let sampleWord = "astronaut";
+let pwRegex =  /(?=\w{6})(?=\w*\d{2})/;
+let result27 = pwRegex.test(sampleWord);
+
+//step30: Mixed Grouping of Characters
+let myString2 = "Eleanor Roosevelt";
+let myRegex5 = /(Franklin|Eleanor) (([A-Z]\.?|[A-Z][a-z]+) )?Roosevelt/;
+let result28 = myRegex.test(myString);
+
+//step31: Reuse Patterns Using Capture Groups
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+) \1 \1$/;
+let result29 = reRegex.test(repeatNum);
+
+//step32: Search and Replace
+let str = "one two three";
+let fixRegex = /(\w+)\s(\w+)\s(\w+)/;
+let replaceText = "$3 $2 $1";
+let result30 = str.replace(fixRegex, replaceText);
+
+//step33: Remove Whitespace from Start and End
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g;
+let result31 = hello.replace(wsRegex, "");
