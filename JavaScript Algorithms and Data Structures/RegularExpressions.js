@@ -52,3 +52,56 @@ let result9 = quoteSample2.match(myRegex1);
 let quoteSample3 = "3 blind mice.";
 let myRegex2 = /[^aeiou0-9]/gi;
 let result10 = quoteSample3.match(myRegex);
+
+//step12: Characters that Occur One or More Times
+let difficultSpelling = "Mississippi";
+let myRegex3 = /s+/gi;
+let result11 = difficultSpelling.match(myRegex);
+
+//step13: Occur Zero or More Times
+let chewieQuote = "Aaaaaaaaaaaaaaaarrrgh!";
+let chewieRegex = /Aa*/;
+let result12 = chewieQuote.match(chewieRegex);
+
+//step14: Lazy Matching
+let text = "<h1>Winter is coming</h1>";
+let myRegex4 = /<.*?>/;
+let result13 = text.match(myRegex);
+
+//step15: Find One or More Criminals in a Hunt
+let reCriminals = /C+/gi;
+
+//step16: Beginning String Patterns
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/;
+let result14 = calRegex.test(rickyAndCal);
+
+//step17: Ending String Patterns
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/;
+let result15 = lastRegex.test(caboose);
+
+//step18: All Letters and Numbers
+let quoteSample4 = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/g;
+let result16 = quoteSample.match(alphabetRegexV2).length;
+
+//step19: Everything But Letters and Numbers
+let quoteSample5 = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W/g;
+let result17 = quoteSample.match(nonAlphabetRegex).length;
+
+//step20: All Numbers
+let movieName = "2001: A Space Odyssey";
+let numRegex = /\d/g;
+let result18 = movieName.match(numRegex).length;
+
+//step21: Non Numbers
+let movieName0 = "2001: A Space Odyssey";
+let noNumRegex = /\D/g;
+let result19 = movieName.match(noNumRegex).length;
+
+//step22: Restrict Possible Usernames
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i; // Change this line
+let result20 = userCheck.test(username)
