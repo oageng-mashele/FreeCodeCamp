@@ -1,0 +1,15 @@
+C:\Users\Oageng.Mashele\Documents\FreeCodeCamp\(New) Foundational C# with Microsoft\Guided-project-methods\bin\Debug\net8.0\Guided-project-methods.exe
+C:\Users\Oageng.Mashele\Documents\FreeCodeCamp\(New) Foundational C# with Microsoft\Guided-project-methods\bin\Debug\net8.0\Guided-project-methods.deps.json
+C:\Users\Oageng.Mashele\Documents\FreeCodeCamp\(New) Foundational C# with Microsoft\Guided-project-methods\bin\Debug\net8.0\Guided-project-methods.runtimeconfig.json
+C:\Users\Oageng.Mashele\Documents\FreeCodeCamp\(New) Foundational C# with Microsoft\Guided-project-methods\bin\Debug\net8.0\Guided-project-methods.dll
+C:\Users\Oageng.Mashele\Documents\FreeCodeCamp\(New) Foundational C# with Microsoft\Guided-project-methods\bin\Debug\net8.0\Guided-project-methods.pdb
+C:\Users\Oageng.Mashele\Documents\FreeCodeCamp\(New) Foundational C# with Microsoft\Guided-project-methods\obj\Debug\net8.0\Guided-project-methods.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Oageng.Mashele\Documents\FreeCodeCamp\(New) Foundational C# with Microsoft\Guided-project-methods\obj\Debug\net8.0\Guided-project-methods.AssemblyInfoInputs.cache
+C:\Users\Oageng.Mashele\Documents\FreeCodeCamp\(New) Foundational C# with Microsoft\Guided-project-methods\obj\Debug\net8.0\Guided-project-methods.AssemblyInfo.cs
+C:\Users\Oageng.Mashele\Documents\FreeCodeCamp\(New) Foundational C# with Microsoft\Guided-project-methods\obj\Debug\net8.0\Guided-project-methods.csproj.CoreCompileInputs.cache
+C:\Users\Oageng.Mashele\Documents\FreeCodeCamp\(New) Foundational C# with Microsoft\Guided-project-methods\obj\Debug\net8.0\Guided-project-methods.sourcelink.json
+C:\Users\Oageng.Mashele\Documents\FreeCodeCamp\(New) Foundational C# with Microsoft\Guided-project-methods\obj\Debug\net8.0\Guided-project-methods.dll
+C:\Users\Oageng.Mashele\Documents\FreeCodeCamp\(New) Foundational C# with Microsoft\Guided-project-methods\obj\Debug\net8.0\refint\Guided-project-methods.dll
+C:\Users\Oageng.Mashele\Documents\FreeCodeCamp\(New) Foundational C# with Microsoft\Guided-project-methods\obj\Debug\net8.0\Guided-project-methods.pdb
+C:\Users\Oageng.Mashele\Documents\FreeCodeCamp\(New) Foundational C# with Microsoft\Guided-project-methods\obj\Debug\net8.0\Guided-project-methods.genruntimeconfig.cache
+C:\Users\Oageng.Mashele\Documents\FreeCodeCamp\(New) Foundational C# with Microsoft\Guided-project-methods\obj\Debug\net8.0\ref\Guided-project-methods.dll
