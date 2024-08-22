@@ -1,25 +1,26 @@
-﻿/*
-   This code reverses a message, counts the number of times 
-   a particular character appears, then prints the results
-   to the console window.
- */
-
-string originalMessage = "The quick brown fox jumps over the lazy dog.";
-
-char[] message = originalMessage.ToCharArray();
-Array.Reverse(message);
-
-int letterCount = 0;
-
-foreach (char letter in message)
+﻿internal class Program
 {
-    if (letter == 'o')
+    private static void Main(string[] args)
     {
-        letterCount++;
+        string[] values = { "12.3", "45", "ABC", "11", "DEF" };
+
+        decimal total = 0m;
+        string message = "";
+
+        foreach (var value in values)
+        {
+            decimal number;
+            if (decimal.TryParse(value, out number))
+            {
+                total += number;
+            }
+            else
+            {
+                message += value;
+            }
+        }
+
+        Console.WriteLine($"Message: {message}");
+        Console.WriteLine($"Total: {total}");
     }
 }
-
-string newMessage = new String(message);
-
-Console.WriteLine(newMessage);
-Console.WriteLine($"'o' appears {letterCount} times.");
