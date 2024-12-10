@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="OagengAlpineSkiHouse20241029102101" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Oageng\.Mashele\\Documents\\FreeCodeCamp\\\(New\)\ Foundational\ C\#\ with\ Microsoft\\AlpineSkiHouse\\AlpineSkiHouse\\obj\\Release\\net8\.0\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>
